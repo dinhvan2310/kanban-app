@@ -84,10 +84,6 @@ function LoginForm() {
                 </Row>
                 <Form
                     form={form}
-                    labelCol={{
-                        span: 8,
-                    }}
-                    labelAlign="left"
                     layout="vertical"
                     onFinish={handleSubmit}
                 >
