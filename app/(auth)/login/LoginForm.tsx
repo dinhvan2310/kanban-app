@@ -4,6 +4,7 @@ import {
     loginFormSchema,
     LoginFormType,
 } from "@/lib/schemaValidation/LoginFormSchema";
+import { cn } from "@/lib/utils";
 import { FacebookOutlined, GithubOutlined, GoogleOutlined, MailOutlined } from "@ant-design/icons";
 import {
     Button,
@@ -26,7 +27,6 @@ import { useState } from "react";
 function LoginForm() {
     const router = useRouter();
     const token = useToken();
-    console.log(token);
     const { Item } = Form;
     const [form] = Form.useForm();
     const rule = createSchemaFieldRule(loginFormSchema);
@@ -64,7 +64,11 @@ function LoginForm() {
 
     return (
         <div
-            className={`w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 bg-[${token[3].colorBgBase}]`}
+            className={cn(`w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0`, {
+            })}
+            style={{
+                backgroundColor: token[3].colorBgBase,
+            }}
         >
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <Row justify={"space-between"}>

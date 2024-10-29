@@ -43,7 +43,10 @@ function RegisterForm() {
 
     return (
         <div
-            className={`w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 bg-[${token[3].colorBgBase}]`}
+            className={`w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0`}
+            style={{
+                backgroundColor: token[3].colorBgBase,
+            }}
         >
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <Row justify={"space-between"}>
