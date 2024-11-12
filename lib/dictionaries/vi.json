@@ -48,7 +48,8 @@
         "Unknown": "Không xác định",
         "Show": "Hiển thị",
         "Completed": "Hoàn thành",
-        "In progress": "Đang tiến hành"
+        "In progress": "Đang tiến hành",
+        "Search": "Tìm kiếm"
     },
     "LoginForm": {
         "No account?": "Chưa có tài khoản?",

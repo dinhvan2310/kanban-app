@@ -46,6 +46,7 @@ const KanbanBoard = ({ params: { workSpaceId } }: Props) => {
 
     const [filterAssignee, setFilterAssignee] = useState<string[]>([]);
     const [filterDueDate, setFilterDueDate] = useState<boolean>(false);
+    const [searchValue, setSearchValue] = useState<string>("");
 
     const columsId = useMemo(
         () => columns.map((column) => column.id),
@@ -181,7 +182,7 @@ const KanbanBoard = ({ params: { workSpaceId } }: Props) => {
                     cards[activeIndex].columnId = cards[overIndex].columnId;
                     return arrayMove(cards, activeIndex, overIndex);
                 });
-            }, 0)
+            }, 10)
         }
         const isActiveColumn = active.data.current.type === KanbanType.KanbanColumn;
         const isOverColumn = over.data.current.type === KanbanType.KanbanColumn;
@@ -197,7 +198,7 @@ const KanbanBoard = ({ params: { workSpaceId } }: Props) => {
                     return arrayMove(columns, activeIndex, overIndex);
                 }
                 );
-            }, 0)
+            }, 10)
         }
     }
 
@@ -250,12 +251,15 @@ const KanbanBoard = ({ params: { workSpaceId } }: Props) => {
         if (filterDueDate) {
             cards = cards.filter((card) => dayjs(card.dueDate, "DD/MM/YYYY").isBefore(dayjs()));
         }
+        if (searchValue) {
+            cards = cards.filter((card) => card.content.toLowerCase().includes(searchValue.toLowerCase()));
+        }
         setCards(cards);
         setColumns(columns);
     }
     useEffect(() => {
         refreshData();
-    }, [filterAssignee, filterDueDate])
+    }, [filterAssignee, filterDueDate, searchValue])
     useEffect(() => {
         const unsubscribeCards: Unsubscribe[] = [];
         const unsubscribe = onSnapshotColumns(() => {
@@ -437,6 +441,8 @@ const KanbanBoard = ({ params: { workSpaceId } }: Props) => {
                 setFilterAssignee={setFilterAssignee}
                 filterDueDate={filterDueDate}
                 setFilterDueDate={setFilterDueDate}
+                searchValue={searchValue}
+                setSearchValue={setSearchValue}
             />
             {/* // Drawer for workspace settings */}
             {/* // Drawer for workspace settings */}

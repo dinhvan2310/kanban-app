@@ -48,7 +48,8 @@
         "Unknown": "Unknown",
         "Show": "Show",
         "Completed": "Completed",
-        "In progress": "In progress"
+        "In progress": "In progress",
+        "Search": "Search"
     },
     "LoginForm": {
         "No account?": "No account?",
