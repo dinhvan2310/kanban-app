@@ -4,7 +4,7 @@ import { Card, Id, Task } from '@/types/KanBanType';
 import { UserDataType } from '@/types/UserDataType';
 import { CloudUploadOutlined, DeleteOutlined, PlusOutlined } from '@ant-design/icons';
 import { DefinedQueryObserverResult, useMutation } from '@tanstack/react-query';
-import { Button, Checkbox, DatePicker, Divider, Input, List, Modal, Popover, Row, Space, Tag, Tooltip, Typography } from 'antd';
+import { Button, Checkbox, DatePicker, Divider, Input, List, message, Modal, Popover, Row, Space, Tag, Tooltip, Typography } from 'antd';
 import dayjs from 'dayjs';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -250,6 +250,9 @@ function ModalEditCard({
                         <Button
                             onClick={() => {
                                 let isValid = true;
+                                if (taskContent === '') {
+                                    isValid = false
+                                }
                                 tasks.forEach((task) => {
                                     if (task.content === taskContent) {
                                         isValid = false
@@ -261,6 +264,8 @@ function ModalEditCard({
                                         isDone: false
                                     }])
                                     setTaskContent('')
+                                } else {
+                                    message.error(i18n.Message['Task already exists or empty'])
                                 }
                             }}
                             type='primary' icon={

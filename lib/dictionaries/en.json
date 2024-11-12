@@ -14,7 +14,8 @@
         "Failed to delete workspace": "Failed to delete workspace",
         "Please enter the workspace name": "Please enter the workspace name",
         "Workspace name does not match": "Workspace name does not match",
-        "This user is already in the list": "This user is already in the list"
+        "This user is already in the list": "This user is already in the list",
+        "Task already exists or empty": "Task already exists or empty"
     },
     "Common": {
         "Home": "Home",

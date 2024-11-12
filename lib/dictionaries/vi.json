@@ -14,7 +14,8 @@
         "Failed to delete workspace": "Xóa không gian làm việc thất bại",
         "Please enter the workspace name": "Vui lòng nhập tên của không gian làm việc",
         "Workspace name does not match": "Tên không gian làm việc không khớp",
-        "This user is already in the list": "Người dùng này đã có trong danh sách"
+        "This user is already in the list": "Người dùng này đã có trong danh sách",
+        "Task already exists or empty": "Công việc đã tồn tại hoặc trống"
     },
     "Common": {
         "Home": "Trang chủ",
