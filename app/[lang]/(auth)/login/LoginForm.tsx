@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useI18n } from "@/contexts/i18n/i18nProvider";
@@ -30,8 +31,6 @@ import useToken from "antd/es/theme/useToken";
 import Title from "antd/es/typography/Title";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-
 
 function LoginForm() {
     const pathName = usePathname();

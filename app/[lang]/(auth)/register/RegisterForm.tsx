@@ -21,7 +21,6 @@ import useToken from "antd/es/theme/useToken";
 import Title from "antd/es/typography/Title";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
 
 function RegisterForm() {
     const pathName = usePathname();

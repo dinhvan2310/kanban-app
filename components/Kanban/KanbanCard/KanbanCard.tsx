@@ -9,12 +9,13 @@ import {
     ClockCircleOutlined,
     DeleteOutlined,
     EditOutlined,
+    FireOutlined,
     MoreOutlined
 } from "@ant-design/icons";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { useQuery } from "@tanstack/react-query";
-import { Button, Popover, Row, Space, Tooltip, Typography } from "antd";
+import { Button, Popover, Row, Space, Tag, Tooltip, Typography } from "antd";
 import useToken from "antd/es/theme/useToken";
 import cn from "classnames";
 import Image from 'next/image';
@@ -227,31 +228,21 @@ const KanbanCard = ({
                             alignItems: "center",
                         }}
                     >
-                        <Typography.Text
-                            style={{
-                                cursor: "pointer",
-                                padding: "4px",
-                                borderRadius: "4px",
-                                justifyContent: "flex-start",
-                                width: "60%",
-                            }}
-                            type={
-                                dayjs(card.dueDate, "DD/MM/YYYY").isBefore(dayjs()) ? 'danger' : 'success'
+                        <Tag
+                            color={
+                                dayjs(card.dueDate, "DD/MM/YYYY").isBefore(dayjs()) ? 'red' : 'blue'
                             }
                         >
-                            <ClockCircleOutlined />
-                            <Typography.Text
-                                strong
-                                style={{
-                                    marginLeft: "4px",
-                                }}
-                                type={
-                                    dayjs(card.dueDate, "DD/MM/YYYY").isBefore(dayjs()) ? 'danger' : 'success'
-                                }
-                            >
+                            {
+                                dayjs(card.dueDate, "DD/MM/YYYY").isBefore(dayjs()) ? (
+                                    <FireOutlined />
+                                ) : (
+                                    <ClockCircleOutlined />
+                                )
+                            }
+                                {' '}
                                 {card.dueDate}
-                            </Typography.Text>
-                        </Typography.Text>
+                        </Tag>
                         {
                             card.assigneeId && assignMember && (
                                 <Tooltip

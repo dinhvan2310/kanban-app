@@ -220,7 +220,7 @@ const KanbanBoard = ({ params: { workSpaceId } }: Props) => {
             columnId: id,
             cardIndex: cards.length,
             content: `Card ${cardsAPI.length + 1}`,
-            dueDate: dayjs().format("DD/MM/YYYY"),
+            dueDate: dayjs().add(1, "day").format("DD/MM/YYYY"),
             assigneeId: userData.data?.id ?? "",
             tasks: [],
         };
