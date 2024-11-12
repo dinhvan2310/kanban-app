@@ -1,11 +1,16 @@
-import { decodeTokenAction } from "@/app/actions/auth";
+'use client'
 
-export default async function HomePage() {
-    const { decodedToken } = await decodeTokenAction();
+import { Layout, Space, Typography } from "antd"
+import { Content } from "antd/es/layout/layout"
+
+export default function HomePage() {
     return (
-        <div>
-            <h1>Home</h1>
-            <p>Decoded token: {decodedToken.email}</p>
-        </div>
+        <Layout>
+            <Content>
+                <Space direction="vertical" size="large">
+                    <Typography.Title level={1}>Welcome to the app!</Typography.Title>
+                </Space>
+            </Content>
+        </Layout>
     )
 }

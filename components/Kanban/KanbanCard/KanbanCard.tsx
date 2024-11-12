@@ -10,7 +10,8 @@ import {
     DeleteOutlined,
     EditOutlined,
     FireOutlined,
-    MoreOutlined
+    MoreOutlined,
+    TagsOutlined
 } from "@ant-design/icons";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
@@ -216,12 +217,20 @@ const KanbanCard = ({
                 </Popover>
             </Row>
             <Space direction="vertical">
+                <Row justify={'start'} className="w-full">
+                    <Tag color={
+                        card.tasks.filter((task) => task.isDone).length === card.tasks.length ? 'green' : 'red'
+                    }>
+                        <TagsOutlined /> {' '}
+                        {
+                            `${card.tasks.filter((task) => task.isDone).length} / ${card.tasks.length}`
+                        }
+                    </Tag>
+                </Row>
                 <Row justify={"space-between"} className="mt-2">
                     <Space
                         style={{
                             cursor: "pointer",
-                            padding: "4px",
-                            borderRadius: "4px",
                             width: "100%",
                             display: "flex",
                             justifyContent: "space-between",
@@ -240,8 +249,8 @@ const KanbanCard = ({
                                     <ClockCircleOutlined />
                                 )
                             }
-                                {' '}
-                                {card.dueDate}
+                            {' '}
+                            {card.dueDate}
                         </Tag>
                         {
                             card.assigneeId && assignMember && (
