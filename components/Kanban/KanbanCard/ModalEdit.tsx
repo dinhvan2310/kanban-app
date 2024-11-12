@@ -241,7 +241,7 @@ function ModalEditCard({
                             </Row>
                         ))}
                     </Space>
-                    <Space.Compact className='w-full'>
+                    <Space.Compact className='w-full mt-1'>
                         <Input value={taskContent} onChange={(e) => {
                             setTaskContent(e.target.value)
                         }}
