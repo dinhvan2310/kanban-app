@@ -1,0 +1,96 @@
+{
+    "Message": {
+        "User created successfully": "Tạo tài khoản thành công",
+        "Failed to create user": "Tạo tài khoản thất bại",
+        "Login successful": "Đăng nhập thành công",
+        "Invalid email or password": "Email hoặc mật khẩu không đúng",
+        "Failed to login": "Đăng nhập thất bại",
+        "Workspace name is required": "Tên không gian làm việc là bắt buộc",
+        "Workspace created successfully": "Tạo không gian làm việc thành công",
+        "Workspace updated successfully": "Cập nhật không gian làm việc thành công",
+        "Workspace deleted successfully": "Xóa không gian làm việc thành công",
+        "Failed to create workspace": "Tạo không gian làm việc thất bại",
+        "Failed to update workspace": "Cập nhật không gian làm việc thất bại",
+        "Failed to delete workspace": "Xóa không gian làm việc thất bại",
+        "Please enter the workspace name": "Vui lòng nhập tên của không gian làm việc",
+        "Workspace name does not match": "Tên không gian làm việc không khớp",
+        "This user is already in the list": "Người dùng này đã có trong danh sách"
+    },
+    "Common": {
+        "Home": "Trang chủ",
+        "Logout": "Đăng xuất",
+        "Sign in": "Đăng nhập",
+        "Register": "Đăng ký",
+        "Email": "Email",
+        "Password": "Mật khẩu",
+        "Or": "Hoặc",
+        "Sign in with": "Đăng nhập với",
+        "Add": "Thêm",
+        "Update": "Cập nhật",
+        "Delete": "Xóa",
+        "Cancel": "Hủy",
+        "Share": "Chia sẻ",
+        "Link copied to clipboard": "Đã sao chép liên kết",
+        "Filter": "Lọc",
+        "Settings": "Cài đặt",
+        "Create": "Tạo",
+        "Remove": "Xóa",
+        "Info": "Thông tin",
+        "Owner": "Chủ sở hữu",
+        "Notifications": "Thông báo",
+        "inviteYouToJoin": "mời bạn tham gia",
+        "theirWorkspace": "không gian làm việc của họ",
+        "doYouWantToJoin?": "Bạn có muốn tham gia không?",
+        "Accept": "Chấp nhận",
+        "Decline": "Từ chối",
+        "RequestingToJoin": "Đang yêu cầu tham gia",
+        "Unknown": "Không xác định",
+        "Show": "Hiển thị",
+        "Completed": "Hoàn thành",
+        "In progress": "Đang tiến hành"
+    },
+    "LoginForm": {
+        "No account?": "Chưa có tài khoản?",
+        "Forgot password?": "Quên mật khẩu?"
+    },
+    "RegisterForm": {
+        "Already have an account?": "Đã có tài khoản?",
+        "Confirm password": "Xác nhận mật khẩu"
+    },
+    "Sidebar": {
+        "Home": "Trang chủ",
+        "General": "Chung",
+        "Dark mode": "Chế độ tối",
+        "Light mode": "Chế độ sáng",
+        "Your workspaces": "Không gian làm việc của bạn",
+        "Guest workspaces": "Không gian làm việc khách"
+    },
+    "Workspace": {
+        "Create workspace": "Tạo không gian làm việc",
+        "Workspace name": "Tên không gian làm việc",
+        "Workspace description": "Không gian làm việc là một khu vực để tách công việc của bạn thành các bối cảnh khác nhau. Bạn có thể có nhiều không gian làm việc cho các dự án hoặc nhiệm vụ khác nhau. (ví dụ: Cá nhân, Công việc, Dự án A, Dự án B)",
+        "Delete workspace": "Xóa không gian làm việc",
+        "Edit workspace": "Chỉnh sửa không gian làm việc",
+        "Change Workspace Name": "Thay đổi tên không gian làm việc",
+        "Delete Workspace description": "Xóa không gian làm việc là không thể đảo ngược. Vui lòng nhập tên của không gian làm việc để xác nhận",
+        "Add members": "Thêm thành viên",
+        "Members": "Thành viên",
+        "Search by email": "Tìm kiếm theo email"
+    },
+    "Column": {
+        "Delete column": "Xóa cột",
+        "Edit column": "Chỉnh sửa cột",
+        "Add column": "Thêm cột"
+    },
+    "Card": {
+        "Add card": "Thêm thẻ",
+        "Delete card": "Xóa thẻ",
+        "Edit card": "Chỉnh sửa thẻ",
+        "Edit card title": "Chỉnh sửa tiêu đề thẻ",
+        "Assign to": "Giao cho",
+        "Not assign yet": "Chưa giao",
+        "Due date": "Hết hạn",
+        "Tasks": "Công việc",
+        "Add task": "Thêm công việc"
+    }
+}

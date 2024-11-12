@@ -1,0 +1,97 @@
+{
+    "Message": {
+        "User created successfully": "User created successfully",
+        "Failed to create user": "Failed to create user",
+        "Login successful": "Login successful",
+        "Invalid email or password": "Invalid email or password",
+        "Failed to login": "Failed to login",
+        "Workspace name is required": "Workspace name is required",
+        "Workspace created successfully": "Workspace created successfully",
+        "Workspace updated successfully": "Workspace updated successfully",
+        "Workspace deleted successfully": "Workspace deleted successfully",
+        "Failed to create workspace": "Failed to create workspace",
+        "Failed to update workspace": "Failed to update workspace",
+        "Failed to delete workspace": "Failed to delete workspace",
+        "Please enter the workspace name": "Please enter the workspace name",
+        "Workspace name does not match": "Workspace name does not match",
+        "This user is already in the list": "This user is already in the list"
+    },
+    "Common": {
+        "Home": "Home",
+        "Logout": "Logout",
+        "Sign in": "Sign in",
+        "Register": "Register",
+        "Email": "Email",
+        "Password": "Password",
+        "Or": "Or",
+        "Sign in with": "Sign in with",
+        "Add": "Add",
+        "Update": "Update",
+        "Delete": "Delete",
+        "Cancel": "Cancel",
+        "Share": "Share",
+        "Link copied to clipboard": "Link copied to clipboard",
+        "Filter": "Filter",
+        "Settings": "Settings",
+        "Create": "Create",
+        "Remove": "Remove",
+        "Info": "Info",
+        "Owner": "Owner",
+        "Notifications": "Notifications",
+        "inviteYouToJoin": "invite you to join",
+        "theirWorkspace": "their workspace",
+        "doYouWantToJoin?": "Do you want to join?",
+        "Accept": "Accept",
+        "Decline": "Decline",
+        "RequestingToJoin": "Requesting to join",
+        "Unknown": "Unknown",
+        "Show": "Show",
+        "Completed": "Completed",
+        "In progress": "In progress"
+    },
+    "LoginForm": {
+        "No account?": "No account?",
+        "Forgot password?": "Forgot password?"
+    },
+    "RegisterForm": {
+        "Already have an account?": "Already have an account?",
+        "Confirm password": "Confirm password"
+    },
+    "Sidebar": {
+        "Home": "Home",
+        "Your workspaces": "Your workspaces",
+        "Guest workspaces": "Guest workspaces",
+        "Settings": "Settings",
+        "General": "General",
+        "Dark mode": "Dark mode",
+        "Light mode": "Light mode"
+    },
+    "Workspace": {
+        "Create workspace": "Create workspace",
+        "Workspace name": "Workspace name",
+        "Workspace description": "A workspace is an area to separate your work into different contexts. You can have multiple workspaces for different projects or tasks. (e.g. Personal, Work, Project A, Project B)",
+        "Delete workspace": "Delete workspace",
+        "Edit workspace": "Edit workspace",
+        "Change Workspace Name": "Change Workspace Name",
+        "Delete Workspace description": "Deleting a workspace is irreversible. Please type the name of the workspace to confirm",
+        "Add members": "Add members",
+        "Members": "Members",
+        "Search by email": "Search by email"
+    },
+    "Column": {
+        "Delete column": "Delete column",
+        "Edit column": "Edit column",
+        "Add column": "Add column"
+    },
+    "Card": {
+        "Add card": "Add card",
+        "Delete card": "Delete card",
+        "Edit card": "Edit card",
+        "Edit card title": "Edit card title",
+        "Assign to": "Assign to",
+        "Not assign yet": "Not assign yet",
+        "Due date": "Due date",
+        "Tasks": "Tasks",
+        "Add task": "Add task"
+    }
+}
